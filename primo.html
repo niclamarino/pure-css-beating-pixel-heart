@@ -1,1 +1,30 @@
-File corretto!
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Nicla Marino"/>
+	<title>Pure CSS Beating pixel heart</title>
+	<style>
+	
+	#heart {margin: auto;
+		margin-top: 200px;
+		animation: beat 0.60s infinite alternate;
+		width: 50px;
+		height: 50px;
+		background: #ff7959;
+		color: #ff7959;
+		box-shadow:55px 55px, -55px 55px, 55px 0px, -55px 0px, 0px 55px, 0px 55px, 110px 0px, -110px 0px, 165px 0px, -165px 0px, -55px -55px, 55px -55px, -110px -55px, 110px -55px,
+		-55px 110px, 55px 110px, -110px 110px, 110px 110px, -110px 55px, 110px 55px, -165px 55px, 165px 55px, 0px 165px, 0px 110px, 55px 165px, -55px 165px, 0px 220px;
+	}
+
+	@keyframes beat {
+		to { transform: scale(1.04); box-shadow:55px 55px #ffa678, -55px 55px #f39564, 55px 0px #ff9059, -55px 0px #ffa678, 0px 55px #ffa678, 0px 55px, 110px 0px, -110px 0px, 165px 0px, -165px 0px #ff9059, -55px -55px #ff9059, 55px -55px #ffa678, -110px -55px #f39564, 110px -55px #f39564,
+			-55px 110px #ff9059, 55px 110px, -110px 110px #ffa678, 110px 110px #ffa678, -110px 55px #f39564, 110px 55px #f39564, -165px 55px #ff9059, 165px 55px #ff9059, 0px 165px #ff9059, 0px 110px, 55px 165px #ffa678, -55px 165px #ff9059, 0px 220px #f39564;}
+
+		}      		
+	</style>
+	<body>
+
+		<div id="heart"></div>
+
+	</body>
